@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Orbit Chat — Floating Tools",
+  "version": "1.4.0",
+  "description": "A green-black RGB floating chat with inline YouTube playback, local groups, saved items, and productivity tools",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
